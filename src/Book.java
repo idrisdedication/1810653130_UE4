@@ -1,13 +1,16 @@
 import java.util.Date;
 
-public class Book
+public class Book           // public: Öffentlich sichtbar; Mitglieder der Klasse (d.h.: Eigenschaften, Methoden),
+                            // Kind-Klassen und andere Klassen können auf die jeweiligen Mitglieder, die public sind, zugreifen.
 {
-    private int pages;
+    private int pages;      // private: Privat sichtbar; Mitglieder können innerhalb von Klassen auf private Mitglieder zugreifen.
+                            // Unterklassen können nicht auf die privaten Mitglieder zugreifen.
     private Date released;
     private String title;
     private String isbn;
 
-    public int getPages()
+    public int getPages()                   // Getter UND Setter: Um Attribute dennoch von außen verändern zu können,
+                                            // benutzt man Get- und Set-Methoden.
     {
         return pages;
     }
